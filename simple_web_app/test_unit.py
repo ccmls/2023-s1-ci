@@ -67,3 +67,27 @@ def test_8_chars_with_no_upper_case_password_should_raise_exception():
     with pytest.raises(Exception):  # then
         # when
         validator.password_validate()
+
+
+def test_8_chars_with_slash_should_raise_exception():
+    # given
+    validator = PasswordValidator(content="1eAB1e/B")
+    with pytest.raises(Exception):  # then
+        # when
+        validator.password_validate()
+
+
+def test_8_chars_with_circunflex_should_raise_exception():
+    # given
+    validator = PasswordValidator(content="1eAB1e^B")
+    with pytest.raises(Exception):  # then
+        # when
+        validator.password_validate()
+
+
+def test_8_chars_with_tilde_should_raise_exception():
+    # given
+    validator = PasswordValidator(content="1eAB1e~B")
+    with pytest.raises(Exception):  # then
+        # when
+        validator.password_validate()
