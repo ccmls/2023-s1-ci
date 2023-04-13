@@ -91,3 +91,4 @@ def test_8_chars_with_tilde_should_raise_exception():
     with pytest.raises(Exception):  # then
         # when
         validator.password_validate()
+        
