@@ -77,7 +77,7 @@ class UpperCaseValidator(Validator):
 
 class BannedEspecialCharactersValidator(Validator):
     def __init__(self):
-        self.banned_especial_characters = {'/', '^', '~'}
+        self.banned_especial_characters = {"/", "^", "~"}
 
     def validate(self, content):
         content_set = set(content)
