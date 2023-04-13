@@ -1,5 +1,6 @@
 import pytest
 
+
 from .models import PasswordValidator, ValidationResponse
 
 
