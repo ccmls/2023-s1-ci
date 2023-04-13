@@ -3,12 +3,12 @@ from typing import List, Optional
 from pydantic import BaseModel
 
 from .string_validators import (
+    BannedEspecialCharactersValidator,
     DigitValidator,
     EspecialCharacterValidator,
     LengthValidator,
     LowerCaseValidator,
     UpperCaseValidator,
-    BannedEspecialCharactersValidator,
     Validator,
 )
 
